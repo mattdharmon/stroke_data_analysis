@@ -1,7 +1,7 @@
 # Stroke Data Analysis
 
-# Meeting time.
+## Meeting time.
 Tuesdays after class.
 
-# Communication
+## Communication
 Chat through slack and use zoom to video chat. Use Trello to keep track of tasks.

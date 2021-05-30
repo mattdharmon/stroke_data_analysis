@@ -9,8 +9,3 @@ Tuesdays after class.
 
 ## Communication
 Chat through slack and use zoom to video chat. Use Trello to keep track of tasks.
-# Meeting time.
-Tuesdays after class. Otherwise as needed. 
-
-# Communication
-Chat through slack and use zoom to video chat. Use Trello to keep track of tasks.

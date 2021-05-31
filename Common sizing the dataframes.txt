@@ -1,0 +1,15 @@
+
+
+Determining commonality between databases
+
+Framingham       Stroke (original CSV)
+Age                       Age
+Gender                    Gender
+BP Meds                   HTN
+BMI                       BMI
+stroke prevalence         same 
+Current smoker            Smokes  - (former smoker will be considered a non-smoker)
+DM yes or No              Avg Blood Sugar (what do we want the cutoff to be? 140)
+
+
+https://professional.diabetes.org/diapro/glucose_calc)

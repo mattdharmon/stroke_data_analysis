@@ -1,6 +1,10 @@
 #Link to Google Slides
 https://docs.google.com/presentation/d/17cFCFnLW4qrUeIxmmtPW_RbE7PYHm5CGyeRSKDeG2SQ/edit#slide=id.gd9369ee227_0_84
 
+
+#Link to Dashboard
+https://prod-useast-b.online.tableau.com/t/jessiestableau/authoring/Draft/Sheet1/Sheet%203#1 
+
 #Stroke Data Analysis
 
 Selected topic - Our group chose to analyze stroke data from a national database. We selected this topic because of our shared interest in healthcare. We realized that some of the tools acquired in this course would allow us to investigate this data in unique and informative ways. 

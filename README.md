@@ -1,12 +1,11 @@
-#Link to Google Slides
+# Link to Google Slides
 https://docs.google.com/presentation/d/17cFCFnLW4qrUeIxmmtPW_RbE7PYHm5CGyeRSKDeG2SQ/edit#slide=id.gd9369ee227_0_84
 
 
-#Link to Dashboard
+# Link to Dashboard
 https://prod-useast-b.online.tableau.com/t/jessiestableau/authoring/Draft/Sheet1/Sheet%203#1 
 
-#Stroke Data Analysis
-
+# Stroke Data Analysis
 Selected topic - Our group chose to analyze stroke data from a national database. We selected this topic because of our shared interest in healthcare. We realized that some of the tools acquired in this course would allow us to investigate this data in unique and informative ways. 
 Description of their source of data - This data was pulled from Kaggle and is a private data source. It includes information such as age, gender, marital status, smoking history, avg blood sugar readings, known heart disease and whether or not the patient had a stroke. It lists data for about 5000 patients.
 Questions we hope to answer with the data include identifying clusters of patients at risk for stroke and better understanding to what extent certain risk factors are predictive of stroke risk. 

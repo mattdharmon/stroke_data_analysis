@@ -1,8 +1,4 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
-
-CREATE TABLE "clean_data" (
+﻿CREATE TABLE "clean_data" (
     "id" serial   NOT NULL,
     "age" float   NOT NULL,
     "current_smoker" int   NOT NULL,
@@ -35,4 +31,3 @@ CREATE TABLE "scaled_data" (
 
 ALTER TABLE "scaled_data" ADD CONSTRAINT "fk_scaled_data_clean_data_id" FOREIGN KEY("clean_data_id")
 REFERENCES "clean_data" ("id");
-

@@ -18,7 +18,8 @@ We determined to analyze our stroke data in the following steps:
 5.  Investigate descriptive stats using Tableau, Pandas, R, apply findings to presentation slides
 6.  Scale model
 7.  Run random forest, compare to other machine learning tools
-8.  Discuss
+8.  Present findings for final project
+9.  Discuss with participants
 
 ## Meeting time.
 Tuesday and Thursdays after class, otherwise as needed. We will use Slack to discuss our plan as often as daily in order to meet deadlines. 

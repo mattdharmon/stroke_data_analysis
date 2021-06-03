@@ -32,6 +32,9 @@ The design:
 
 ![](resources/images/db_ERD.png)
 
+## Analysis
+![](https://github.com/mattdharmon/stroke_data_analysis/blob/abby/resources/images/correlation_graph.png)
+
 ## Meeting time.
 Tuesday and Thursdays after class, otherwise as needed. We will use Slack to discuss our plan as often as daily in order to meet deadlines. 
 

@@ -23,8 +23,9 @@ We determined to analyze our stroke data in the following steps:
 https://docs.google.com/presentation/d/17cFCFnLW4qrUeIxmmtPW_RbE7PYHm5CGyeRSKDeG2SQ/edit#slide=id.gdabe68cc73_0_15
 
 
-## Link to Dashboard
+## Links to Dashboard
 https://prod-useast-b.online.tableau.com/t/jessiestableau/authoring/Draft/Sheet1/Sheet%203#1 
+https://prod-useast-b.online.tableau.com/t/jessiestableau/authoring/Seanadds62/BMIStroke?#1
 
 
 ## Database

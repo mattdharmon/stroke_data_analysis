@@ -20,7 +20,7 @@ We determined to analyze our stroke data in the following steps:
 11.  Discuss with instructors and participants
 
 ## Link to Google Slides
-https://docs.google.com/presentation/d/17cFCFnLW4qrUeIxmmtPW_RbE7PYHm5CGyeRSKDeG2SQ/edit#slide=id.gd9369ee227_0_84
+https://docs.google.com/presentation/d/17cFCFnLW4qrUeIxmmtPW_RbE7PYHm5CGyeRSKDeG2SQ/edit#slide=id.gdabe68cc73_0_15
 
 
 ## Link to Dashboard

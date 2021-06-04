@@ -12,7 +12,7 @@ We determined to analyze our stroke data in the following steps:
 3.  Merge data per requirement guidelines
 4.  Save to database on PostgreSQL (Amazon's document DB external access was outside of VCS and was prohibitive)
 5.  Investigate descriptive stats using Tableau, Pandas, R, apply findings to presentation slides
-6.  Discuss findings and justification for sunsequent methods
+6.  Discuss findings and justification for subsequent methods
 7.  Scale model for machine learning
 8.  Run Neural Network, compare to other machine learning tools
 9.  Build/host web app using Heroku

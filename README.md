@@ -7,16 +7,18 @@ Questions we hope to answer with the data include identifying clusters of patien
 Our aim was to predict stroke outcomes based off of common risk factors. 
 We determined to analyze our stroke data in the following steps:
 
-1.  Find data - we chose stroke data because of our shared interest in healthcare
-2.  Seek out comparable data for comparison
-3.  Merge data
+1.  Find data - we chose stroke data because of our shared interest in healthcare, we used Kaggle to find datasets
+2.  Seek out comparable data for comparison (Framingham study data)
+3.  Merge data per requirement guidelines
 4.  Save to database on PostgreSQL (Amazon's document DB external access was outside of VCS and was prohibitive)
 5.  Investigate descriptive stats using Tableau, Pandas, R, apply findings to presentation slides
-6.  Scale model
-7.  Run random forest, compare to other machine learning tools
-8.  Present findings for final project
-9.  Discuss with participants
-10. 
+6.  Discuss findings and justification for sunsequent methods
+7.  Scale model for machine learning
+8.  Run Neural Network, compare to other machine learning tools
+9.  Build/host web app using Heroku
+10.  Present findings for final project
+11.  Discuss with instructors and participants
+
 ## Link to Google Slides
 https://docs.google.com/presentation/d/17cFCFnLW4qrUeIxmmtPW_RbE7PYHm5CGyeRSKDeG2SQ/edit#slide=id.gd9369ee227_0_84
 
@@ -26,7 +28,7 @@ https://prod-useast-b.online.tableau.com/t/jessiestableau/authoring/Draft/Sheet1
 
 
 ## Database
-I am saving the merged data and encoded data to a Amazon's RDS service using PostgreSQL.
+Saving the merged data and encoded data to a Amazon's RDS service using PostgreSQL.
 
 The design:
 
@@ -36,4 +38,4 @@ The design:
 Tuesday and Thursdays after class, otherwise as needed. We will use Slack to discuss our plan as often as daily in order to meet deadlines. 
 
 ## Communication
-Chat through slack and use zoom to video chat. Use Trello to keep track of tasks.
+Chat through slack and use zoom to video chat. Use Trello to keep track of tasks. Meet as needed to finalize project. 

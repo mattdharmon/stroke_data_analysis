@@ -31,9 +31,3 @@ I am saving the merged data and encoded data to a Amazon's RDS service using Pos
 The design:
 
 ![](resources/images/db_ERD.png)
-
-## Meeting time.
-Tuesday and Thursdays after class, otherwise as needed. We will use Slack to discuss our plan as often as daily in order to meet deadlines. 
-
-## Communication
-Chat through slack and use zoom to video chat. Use Trello to keep track of tasks.

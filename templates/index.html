@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <title>Stroke Risk Assesment</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input class="form-control" type="number" name="age" value={{ form.age }}></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="current_smoker">Are you currently smoking?</label>
+                        <select name="current_smoker" id="current_smoker_select" class="form-control" value={{ form.current_smoker }}>
+                            <option value="1" {% if form.current_smoker == '1' %}selected{% endif %}>Yes</option>
+                            <option value="0" {% if form.current_smoker == '0' %}selected{% endif %}>No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hypertension">Do you have hypertension?</label>
+                        <select name="hypertension" id="hypertension_select" class="form-control" >
+                            <option value="1" {% if form.hypertension == '1' %}selected{% endif %}>Yes</option>
+                            <option value="0" {% if form.hypertension == '0' %}selected{% endif %}>No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bmi">Please enter your bmi.</label>
+                        <input type="number" name="bmi" class="form-control" value={{ form.bmi }}></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="avg_glucose_level">What is your average glucose level?</label>
+                        <input type="number" name="avg_glucose_level" class="form-control" value={{ form.avg_glucose_level }}></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender_select" class="form-control">
+                            <option value="Male" {% if form.gender == 'Male' %}selected{% endif %}>Male</option>
+                            <option value="Female" {% if form.gender == 'Female' %}selected{% endif %}>Female</option>
+                            <option value="Other" {% if form.gender == 'Other' %}selected{% endif %}>Other</option>
+                        </select>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Submit"></input>
+                </form>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                {% if prediction is none %}
+                    Place holder
+                {% else %}
+                    {{ prediction }}
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

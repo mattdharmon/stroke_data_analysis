@@ -8,59 +8,115 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    
     <title>Stroke Risk Assesment</title>
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-lg-6">
-                <form action="/" method="post">
-                    <div class="form-group">
-                        <label for="age">Age</label>
-                        <input class="form-control" type="number" name="age" value={{ form.age }}></input>
-                    </div>
-                    <div class="form-group">
-                        <label for="current_smoker">Are you currently smoking?</label>
-                        <select name="current_smoker" id="current_smoker_select" class="form-control" value={{ form.current_smoker }}>
-                            <option value="1" {% if form.current_smoker == '1' %}selected{% endif %}>Yes</option>
-                            <option value="0" {% if form.current_smoker == '0' %}selected{% endif %}>No</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="hypertension">Do you have hypertension?</label>
-                        <select name="hypertension" id="hypertension_select" class="form-control" >
-                            <option value="1" {% if form.hypertension == '1' %}selected{% endif %}>Yes</option>
-                            <option value="0" {% if form.hypertension == '0' %}selected{% endif %}>No</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="bmi">Please enter your bmi.</label>
-                        <input type="number" name="bmi" class="form-control" value={{ form.bmi }}></input>
-                    </div>
-                    <div class="form-group">
-                        <label for="avg_glucose_level">What is your average glucose level?</label>
-                        <input type="number" name="avg_glucose_level" class="form-control" value={{ form.avg_glucose_level }}></input>
-                    </div>
-                    <div class="form-group">
-                        <label for="gender">Gender</label>
-                        <select name="gender" id="gender_select" class="form-control">
-                            <option value="Male" {% if form.gender == 'Male' %}selected{% endif %}>Male</option>
-                            <option value="Female" {% if form.gender == 'Female' %}selected{% endif %}>Female</option>
-                            <option value="Other" {% if form.gender == 'Other' %}selected{% endif %}>Other</option>
-                        </select>
-                    </div>
-                    <input class="btn btn-primary" type="submit" value="Submit"></input>
-                </form>
-            </div>
-            <div class="col-sm-12 col-lg-6">
-                {% if prediction is none %}
-                    Place holder
-                {% else %}
-                    {{ prediction }}
-                {% endif %}
 
-            </div>
-        </div>
+<style>
+#leftBar{
+    position:absolute;
+    left:3%;
+    top:20%;
+    background-color:white;
+    border: 2px solid rgb(10, 75, 16);
+    width:40%;
+}
+#rightBar{
+    position:absolute;
+    left:45%;
+    top:20%;
+    background-color:white;
+    border: 2px solid rgb(10, 75, 16);
+    width:43%;
+}
+#navBar{
+    position:absolute;
+    left:0%;
+    top:0%;
+    width:100%;
+    height:8%;
+    background-color:rgb(10, 53, 24);
+}
+#secondNav{
+    position:absolute;
+    left:0%;
+    top:8%;
+    width:100%;
+    height:3%;
+    background-color:rgb(165, 152, 152);
+}
+.label{
+    font-size:1.2em;
+}
+
+</style>
+</head>
+<body style="background-color: rgb(255, 0, 0, 0.4);">
+    <div id = "navBar">
+    <h3 id="title" style="text-align: center;color:white; font-family: 'Mate SC', serif;font-size:2.5em;"> Find Out if You Are at Risk for a Stroke!</h3></div>
+    
+    <div id = "secondNav">
+        <p style = "position:absolute;left:1%;top:9%">Welcome!</p>
     </div>
+    
+<div id = "leftBar">
+    <form action="/" method="post">
+        <div class="form-group">
+            <label for="age" style = "position:relative;left:2%;font-size:1.2em;">Age</label><br>
+            <input style = "width:20%;position:relative;left:2%;" type="number" name="age" value={{ form.age }}></input>
+        </div>
+                    
+        <div class="form-group">
+            <label for="current_smoker" style = "position:relative;left:2%;font-size:1.2em;">Are you currently smoking?</label><br>
+            <select style = "width:20%;position:relative;left:2%;" name="current_smoker" id="current_smoker_select" class="form-control" value={{ form.current_smoker }}>
+                <option value="1" {% if form.current_smoker == '1' %}selected{% endif %}>Yes</option>
+                <option value="0" {% if form.current_smoker == '0' %}selected{% endif %}>No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="hypertension" style = "position:relative;left:2%;font-size:1.2em;">Do you have hypertension?</label>
+            <select style = "width:20%;position:relative;left:2%;" name="hypertension" id="hypertension_select" class="form-control" >
+                <option value="1" {% if form.hypertension == '1' %}selected{% endif %}>Yes</option>
+                <option value="0" {% if form.hypertension == '0' %}selected{% endif %}>No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="bmi" style = "position:relative;left:2%;font-size:1.2em;">Please enter your bmi.</label>
+            <input style = "width:20%;position:relative;left:2%;" type="number" name="bmi" class="form-control" value={{ form.bmi }}></input>
+        </div>
+
+        <div class="form-group">
+            <label for="avg_glucose_level" style = "position:relative;left:2%;font-size:1.2em;">What is your average glucose level?</label>
+            <input style = "width:20%;position:relative;left:2%;" type="number" name="avg_glucose_level" class="form-control" value={{ form.avg_glucose_level }}></input>
+        </div>
+
+        <div class="form-group">
+            <label for="gender" style = "position:relative;left:2%;font-size:1.2em;">Gender</label>
+            <select style = "width:20%;position:relative;left:2%;" name="gender" id="gender_select" class="form-control">
+                <option value="Male" {% if form.gender == 'Male' %}selected{% endif %}>Male</option>
+                <option value="Female" {% if form.gender == 'Female' %}selected{% endif %}>Female</option>
+                <option value="Other" {% if form.gender == 'Other' %}selected{% endif %}>Other</option>
+            </select>
+
+        <input style = "position:absolute;left:88%;top:91%;" class="btn btn-primary" type="submit" value="Submit"></input>
+    </form>
+</div></div>
+         
+<div id = "rightBar">
+    <div class="col-sm-12 col-lg-6">
+        {% if prediction is none %}
+            Place holder
+        
+        {% else %}
+            There is {{ prediction }}% of chance that you will have a stroke.
+        {% endif %}
+
+    </div>
+
 </body>
 </html>

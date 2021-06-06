@@ -17,33 +17,36 @@
                 <form action="/" method="post">
                     <div class="form-group">
                         <label for="age">Age</label>
-                        <input class="form-control" type="number" name="age" value={{ form.age }}></input>
+                        <input class="form-control" type="number" name="age" value={{ form.age }} step="any" required></input>
                     </div>
                     <div class="form-group">
                         <label for="current_smoker">Are you currently smoking?</label>
-                        <select name="current_smoker" id="current_smoker_select" class="form-control" value={{ form.current_smoker }}>
+                        <select name="current_smoker" id="current_smoker_select" class="form-control" value={{ form.current_smoker }} required>
+                            <option value="">Please select</option>
                             <option value="1" {% if form.current_smoker == '1' %}selected{% endif %}>Yes</option>
                             <option value="0" {% if form.current_smoker == '0' %}selected{% endif %}>No</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="hypertension">Do you have hypertension?</label>
-                        <select name="hypertension" id="hypertension_select" class="form-control" >
+                        <select name="hypertension" id="hypertension_select" class="form-control" required>
+                            <option value="">Please select</option>
                             <option value="1" {% if form.hypertension == '1' %}selected{% endif %}>Yes</option>
                             <option value="0" {% if form.hypertension == '0' %}selected{% endif %}>No</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="bmi">Please enter your bmi.</label>
-                        <input type="number" name="bmi" class="form-control" value={{ form.bmi }}></input>
+                        <input type="number" name="bmi" class="form-control" value={{ form.bmi }} step="any" required></input>
                     </div>
                     <div class="form-group">
                         <label for="avg_glucose_level">What is your average glucose level?</label>
-                        <input type="number" name="avg_glucose_level" class="form-control" value={{ form.avg_glucose_level }}></input>
+                        <input type="number" name="avg_glucose_level" class="form-control" value={{ form.avg_glucose_level }} step="any" required></input>
                     </div>
                     <div class="form-group">
                         <label for="gender">Gender</label>
-                        <select name="gender" id="gender_select" class="form-control">
+                        <select name="gender" id="gender_select" class="form-control" required>
+                            <option value="">Please select</option>
                             <option value="Male" {% if form.gender == 'Male' %}selected{% endif %}>Male</option>
                             <option value="Female" {% if form.gender == 'Female' %}selected{% endif %}>Female</option>
                             <option value="Other" {% if form.gender == 'Other' %}selected{% endif %}>Other</option>

@@ -16,7 +16,7 @@ We determined to analyze our stroke data in the following steps:
 7.  Run random forest, compare to other machine learning tools
 8.  Present findings for final project
 9.  Discuss with participants
-10. 
+
 ## Link to Google Slides
 https://docs.google.com/presentation/d/17cFCFnLW4qrUeIxmmtPW_RbE7PYHm5CGyeRSKDeG2SQ/edit#slide=id.gd9369ee227_0_84
 

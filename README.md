@@ -31,3 +31,7 @@ I am saving the merged data and encoded data to a Amazon's RDS service using Pos
 The design:
 
 ![](resources/images/db_ERD.png)
+
+## Analysis
+
+![](resources/images/correlation_graph.png)

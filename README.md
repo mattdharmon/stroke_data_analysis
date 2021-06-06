@@ -7,31 +7,39 @@ Questions we hope to answer with the data include identifying clusters of patien
 Our aim was to predict stroke outcomes based off of common risk factors. 
 We determined to analyze our stroke data in the following steps:
 
-1.  Find data - we chose stroke data because of our shared interest in healthcare
-2.  Seek out comparable data for comparison
-3.  Merge data
-4.  Save to database on PostgreSQL (Amazon's document DB external access was outside of VCS and was prohibitive)
-5.  Investigate descriptive stats using Tableau, Pandas, R, apply findings to presentation slides
-6.  Scale model
-7.  Run random forest, compare to other machine learning tools
-8.  Present findings for final project
-9.  Discuss with participants
-10. 
+1. Find data - we chose stroke data because of our shared interest in healthcare
+2. Seek out comparable data for comparison
+3. Merge data
+4. Save to database on PostgreSQL (Amazon's document DB external access was outside of VCS and was prohibitive)
+5. Investigate descriptive stats using Tableau, Pandas, R, apply findings to presentation slides
+6. Scale model
+7. Run random forest, compare to other machine learning tools
+8. Present findings for final project
+9. Discuss with participants
+
 ## Link to Google Slides
+
 https://docs.google.com/presentation/d/17cFCFnLW4qrUeIxmmtPW_RbE7PYHm5CGyeRSKDeG2SQ/edit#slide=id.gd9369ee227_0_84
 
 
 ## Link to Dashboard
+
 https://prod-useast-b.online.tableau.com/t/jessiestableau/authoring/Draft/Sheet1/Sheet%203#1 
 
-
 ## Database
+
 I am saving the merged data and encoded data to a Amazon's RDS service using PostgreSQL.
 
 The design:
 
-![](resources/images/db_ERD.png)
+![Database Design](resources/images/db_ERD.png)
 
 ## Analysis
 
-![](resources/images/correlation_graph.png)
+![Correlation Graph](resources/images/correlation_graph.png)
+
+## Stroke Prediction Website
+
+Here is a webiste where you can enter the data and predict your chances of stroke.
+
+https://stroke-risk-analysis.herokuapp.com/

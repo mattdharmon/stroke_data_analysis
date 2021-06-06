@@ -66,7 +66,7 @@
     <form action="/" method="post">
         <div class="form-group">
             <label for="age" style = "position:relative;left:2%;font-size:1.2em;">Age</label><br>
-            <input style = "width:20%;position:relative;left:2%;" type="number" name="age" value={{ form.age }}></input>
+            <input style = "width:20%;position:relative;left:2%;" type="number" name="age" step="any" value={{ form.age }} required></input>
         </div>
                     
         <div class="form-group">
@@ -87,12 +87,12 @@
 
         <div class="form-group">
             <label for="bmi" style = "position:relative;left:2%;font-size:1.2em;">Please enter your bmi.</label>
-            <input style = "width:20%;position:relative;left:2%;" type="number" name="bmi" class="form-control" value={{ form.bmi }}></input>
+            <input style = "width:20%;position:relative;left:2%;" type="number" name="bmi" class="form-control" step="any" value={{ form.bmi }} required></input>
         </div>
 
         <div class="form-group">
             <label for="avg_glucose_level" style = "position:relative;left:2%;font-size:1.2em;">What is your average glucose level?</label>
-            <input style = "width:20%;position:relative;left:2%;" type="number" name="avg_glucose_level" class="form-control" value={{ form.avg_glucose_level }}></input>
+            <input style = "width:20%;position:relative;left:2%;" type="number" name="avg_glucose_level" class="form-control" step="any" value={{ form.avg_glucose_level }} required></input>
         </div>
 
         <div class="form-group">

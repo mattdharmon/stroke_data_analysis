@@ -14,8 +14,7 @@ We hope to get answers from the data include identifying clusters of patients at
 
 ## Outline
 
-Our aim was to predict stroke outcomes based off of common risk factors.
-We determined to analyze our stroke data in the following steps:
+Our aim was to predict stroke outcomes based off of common risk factors. We determined to analyze our stroke data in the following steps:
 
 1. Find data - we chose stroke data because of our shared interest in healthcare
 2. Seek out comparable data for comparison

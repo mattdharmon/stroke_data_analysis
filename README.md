@@ -48,6 +48,7 @@ Our aim was to predict stroke outcomes based off of common risk factors. We dete
 - Used 2 hidden layers and 1 output layer to build the neural network using the sequential model.
 - Tried both 100 epochs and there wasn't much difference than 1 epoch to build the model. They both stayed about 97% accurate.
 - The model was saved to be used for future predictions to be used in the web application.
+- The downside of using Tensorflow is that it is a blackbox. It will be hard to tell you what exactly it is using and what it considers the most important feature that puts you at risk for a stroke.
 
 ## Presentation
 

@@ -50,6 +50,8 @@ Our aim was to predict stroke outcomes based off of common risk factors. We dete
 - The model was saved to be used for future predictions and in the web application.
 - The downside of using Tensorflow is that it is a blackbox. It will be hard to tell what exactly the model is using and what it considers the most important feature that puts one at risk for a stroke.
 
+![Model Accuracy](resources/images/modelaccuracy.png)
+
 ## Presentation
 
 This is our presentation on the project.

@@ -43,7 +43,7 @@ Our aim was to predict stroke outcomes based off of common risk factors. We dete
 - Encoded the gender field to 3 fields (gender_Male/gender_Female/gender_Other)
 - Saved the encoded data to the database with a foreign key of the original data for data integerity.
 - Since we were looking for stroke risk in other areas, we split the data into stoke column and all the others without the stroke columns.
-- The data was then split into 2 categories, stroke training/stroke testing, features test and training. This split was done for the purpose of training the machine learning model and having a seperate data to see how accurate the machine model predicting was.
+- The data was then split into 2 categories, stroke training/stroke testing, features test and training. This split was done for the purpose of training the machine learning model and having a seperate data to see how accurate the machine model prediction was.
 - We chose to use TensorFlow due to learning how it was used to help identify population that might be at higher risk for Covid-19 infection.
 - Used 2 hidden layers and 1 output layer to build the neural network using the sequential model.
 - Tried 100 epochs and there wasn't much difference than 1 epoch to build the model. They both had the accuracy of around 97%.

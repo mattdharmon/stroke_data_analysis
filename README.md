@@ -4,11 +4,11 @@
 
 Our group chose to analyze stroke data from a national database. We selected this topic because of our shared interest in healthcare. We realized that some of the tools acquired in this course would allow us to investigate this data in unique and informative ways.
 
-## Description of the source of data
+## Description of the Source of Data
 
 This data was pulled from Kaggle and is a private data source. It includes information such as age, gender, marital status, smoking history, average blood sugar readings, known heart disease and whether or not the patient had a stroke. It lists data for about 5000 patients. Our other data came from the Framingham Heart Study which is a long-term, ongoing cardiovascular cohort study of residents of the city of Framingham, Massachusetts. The study began in 1948 with 5,209 adult subjects, and is now on its third generation of participants.
 
-## Questions we hope to answer
+## Questions we Hope to Answer
 
 We hope to get answers from the data including identifying clusters of patients at risk for stroke and better understanding to what extent certain risk factors are predictive of stroke risk.
 

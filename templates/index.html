@@ -113,6 +113,15 @@
 
             <div class="row">
                 <div class="col-md-6 col-sm-12 mb-3" id="leftBar">
+                    <h3>
+                        Stroke Risk Prediction
+                    </h3>
+                    <p class="bd-lead">
+                        Fill out this form to give our Tensorflow Prediction Model a try.
+                    </p>
+                    <p class="bd-lead">
+                        <i>**Notice** Please do not use this as a diagnostic tool. This is intended for educational purposes.</i>
+                    </p>
                     <form action="/" method="post">
                         <div class="mb-3 mt-3">
                             <label for="age" class="form-label">Age</label>
@@ -199,8 +208,14 @@
                         {% if prediction is none %}
                             Submit Form for Results
                         {% else %}
-                            <h3>Results</h3>
-                            There is {{ prediction * 100 }}% of chance that you will have a stroke.
+                            <dl>
+                                <dt>
+                                    Result
+                                </dt>
+                                <dd>
+                                    There is {{ prediction * 100 }}% of chance that you will have a stroke.
+                                </dd>
+                            </dl>
                         {% endif %}
                     </p>
                 </div>

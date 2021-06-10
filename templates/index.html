@@ -1,122 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <!-- Fonts -->
-    
+
     <title>Stroke Risk Assesment</title>
 
-<style>
-#leftBar{
-    position:absolute;
-    left:3%;
-    top:20%;
-    background-color:white;
-    border: 2px solid rgb(10, 75, 16);
-    width:40%;
-}
-#rightBar{
-    position:absolute;
-    left:45%;
-    top:20%;
-    background-color:white;
-    border: 2px solid rgb(10, 75, 16);
-    width:43%;
-}
-#navBar{
-    position:absolute;
-    left:0%;
-    top:0%;
-    width:100%;
-    height:8%;
-    background-color:rgb(10, 53, 24);
-}
-#secondNav{
-    position:absolute;
-    left:0%;
-    top:8%;
-    width:100%;
-    height:3%;
-    background-color:rgb(165, 152, 152);
-}
-.label{
-    font-size:1.2em;
-}
+    <style>
+        #leftBar {
+            /* position:absolute; */
+            /* left: 3%; */
+            /* top: 20%; */
+            background-color: white;
+            border: 2px solid rgb(10, 75, 16);
+            /* width: 40%; */
+        }
 
-</style>
+        #rightBar {
+            /* position:absolute; */
+            /* left: 45%; */
+            /* top: 20%; */
+            background-color: white;
+            border: 2px solid rgb(10, 75, 16);
+            /* width: 43%; */
+        }
+
+        #navBar {
+            /* position:absolute; */
+            /* left: 0%;
+            top: 0%;
+            width: 100%;
+            height: 8%; */
+            background-color: rgb(10, 53, 24);
+        }
+
+        #secondNav {
+            /* position:absolute; */
+            left: 0%;
+            top: 8%;
+            width: 100%;
+            height: 3%;
+            background-color: rgb(165, 152, 152);
+        }
+
+        .label {
+            font-size: 1.2em;
+        }
+    </style>
 </head>
+
 <body style="background-color: rgb(255, 0, 0, 0.4);">
-    <div id = "navBar">
-    <h3 id="title" style="text-align: center;color:white; font-family: 'Mate SC', serif;font-size:2.5em;"> Find Out if You Are at Risk for a Stroke!</h3></div>
-    
-    <div id = "secondNav">
-        <p style = "position:absolute;left:1%;top:9%">Welcome!</p>
-    </div>
-    
-<div id = "leftBar">
-    <form action="/" method="post">
-        <div class="form-group">
-            <label for="age" style = "position:relative;left:2%;font-size:1.2em;">Age</label><br>
-            <input style = "width:20%;position:relative;left:2%;" type="number" name="age" step="any" value={{ form.age }} required></input>
+    <div class="container">
+        <div class="row" id="navBar">
+            <h3 id="title" style="text-align: center;color:white; font-family: 'Mate SC', serif;font-size:2.5em;">
+                Find Out if You Are at Risk for a Stroke!
+            </h3>
         </div>
-                    
-        <div class="form-group">
-            <label for="current_smoker" style = "position:relative;left:2%;font-size:1.2em;">Are you currently smoking?</label><br>
-            <select style = "width:20%;position:relative;left:2%;" name="current_smoker" id="current_smoker_select" class="form-control" value={{ form.current_smoker }}>
-                <option value="1" {% if form.current_smoker == '1' %}selected{% endif %}>Yes</option>
-                <option value="0" {% if form.current_smoker == '0' %}selected{% endif %}>No</option>
-            </select>
+        <div classs="row justify-content-sm-center" id="secondNav">
+            <p>Welcome!</p>
         </div>
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class='tableauPlaceholder'
+                        id='viz1623341878645'
+                        style='position: relative'>
+                        <noscript>
+                            <a href='#'>
+                                <img alt='Stroke Risk Data Analysis '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;data_analytics_final_project_dashboard&#47;StrokeRiskDataAnalysis&#47;1_rss.png'
+                                style='border: none' />
+                            </a>
+                        </noscript>
+                        <object class='tableauViz'  style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name'
+                                    value='data_analytics_final_project_dashboard&#47;StrokeRiskDataAnalysis' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;data_analytics_final_project_dashboard&#47;StrokeRiskDataAnalysis&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-US' />
+                        </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1623341878645');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label for="hypertension" style = "position:relative;left:2%;font-size:1.2em;">Do you have hypertension?</label>
-            <select style = "width:20%;position:relative;left:2%;" name="hypertension" id="hypertension_select" class="form-control" >
-                <option value="1" {% if form.hypertension == '1' %}selected{% endif %}>Yes</option>
-                <option value="0" {% if form.hypertension == '0' %}selected{% endif %}>No</option>
-            </select>
-        </div>
+            <br>
 
-        <div class="form-group">
-            <label for="bmi" style = "position:relative;left:2%;font-size:1.2em;">Please enter your bmi.</label>
-            <input style = "width:20%;position:relative;left:2%;" type="number" name="bmi" class="form-control" step="any" value={{ form.bmi }} required></input>
-        </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mb-3" id="leftBar">
+                    <form action="/" method="post">
+                        <div class="mb-3 mt-3">
+                            <label for="age" class="form-label">Age</label>
+                            <input class="form-control"
+                                    type="number"
+                                    name="age"
+                                    step="any"
+                                    value={{ form.age }}
+                                    required>
+                            </input>
+                        </div>
 
-        <div class="form-group">
-            <label for="avg_glucose_level" style = "position:relative;left:2%;font-size:1.2em;">What is your average glucose level?</label>
-            <input style = "width:20%;position:relative;left:2%;" type="number" name="avg_glucose_level" class="form-control" step="any" value={{ form.avg_glucose_level }} required></input>
-        </div>
+                        <div class="mb-3">
+                            <label for="current_smoker" class="form-label">
+                                Are you currently smoking?
+                            </label>
+                            <select class="form-select"
+                                    name="current_smoker"
+                                    id="current_smoker_select"
+                                    value={{ form.current_smoker }}>
+                                <option value="1" {% if form.current_smoker=='1' %}selected{% endif %}>Yes</option>
+                                <option value="0" {% if form.current_smoker=='0' %}selected{% endif %}>No</option>
+                            </select>
+                        </div>
 
-        <div class="form-group">
-            <label for="gender" style = "position:relative;left:2%;font-size:1.2em;">Gender</label>
-            <select style = "width:20%;position:relative;left:2%;" name="gender" id="gender_select" class="form-control">
-                <option value="Male" {% if form.gender == 'Male' %}selected{% endif %}>Male</option>
-                <option value="Female" {% if form.gender == 'Female' %}selected{% endif %}>Female</option>
-                <option value="Other" {% if form.gender == 'Other' %}selected{% endif %}>Other</option>
-            </select>
+                        <div class="mb-3">
+                            <label for="hypertension" class="form-label">
+                                Do you have hypertension?
+                            </label>
+                            <select class="form-select"
+                                    name="hypertension"
+                                    id="hypertension_select">
+                                <option value="1" {% if form.hypertension=='1' %}selected{% endif %}>Yes</option>
+                                <option value="0" {% if form.hypertension=='0' %}selected{% endif %}>No</option>
+                            </select>
+                        </div>
 
-        <input style = "position:absolute;left:88%;top:91%;" class="btn btn-primary" type="submit" value="Submit"></input>
-    </form>
-</div></div>
-         
-<div id = "rightBar">
-    <div class="col-sm-12 col-lg-6">
-        {% if prediction is none %}
-            Place holder
-        
-        {% else %}
-            There is {{ prediction * 100 }}% of chance that you will have a stroke.
-        {% endif %}
+                        <div class="mb-3">
+                            <label for="bmi" class="form-label">
+                                Please enter your bmi.
+                            </label>
+                            <input class="form-control"
+                                    type="number"
+                                    name="bmi"
+                                    step="any"
+                                    value={{ form.bmi }}
+                                    required>
+                            </input>
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="avg_glucose_level" class="form-label">
+                                What is your average glucose level?
+                            </label>
+                            <input class="form-control"
+                                    name="avg_glucose_level"
+                                    type="number"
+                                    step="any"
+                                    value={{ form.avg_glucose_level }}
+                                    required>
+                            </input>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="gender" class="form-label">Gender</label>
+                            <select name="gender"
+                                    id="gender_select"
+                                    class="form-select">
+                                <option value="Male" {% if form.gender=='Male' %}selected{% endif %}>Male</option>
+                                <option value="Female" {% if form.gender=='Female' %}selected{% endif %}>Female</option>
+                                <option value="Other" {% if form.gender=='Other' %}selected{% endif %}>Other</option>
+                            </select>
+                        </div>
+                            <input class="btn btn-primary mb-3"
+                                    type="submit"
+                                    value="Submit">
+                            </input>
+                            <br>
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 align-items-center" id="rightBar">
+                    <p class="text-center">
+                        {% if prediction is none %}
+                            Submit Form for Results
+                        {% else %}
+                            <h3>Results</h3>
+                            There is {{ prediction * 100 }}% of chance that you will have a stroke.
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        <br>
     </div>
 
 </body>
+
 </html>
